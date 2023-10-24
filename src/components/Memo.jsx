@@ -31,7 +31,6 @@ function Memo () {
     </>
   )
 }
-
 export default Memo
 
 export const NameComponent = props => {
@@ -46,6 +45,7 @@ export const NameComponent = props => {
 }
 
 function NamesAreEqual (prevProps, nextProps) {
+  console.log('Checking memoization')
   return prevProps.name === nextProps.name
 }
 
